@@ -1,0 +1,21 @@
+.titulo {
+    text-align: center;
+    font-size: 36px;
+    margin: 30px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.btnAgregar{
+    cursor: pointer !important;
+    color: black !important;
+    background-color: #F2CB05 !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2) !important;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s !important;
+}
+
+.btnAgregar:hover{
+    background-color: black !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3) !important;
+    color: white !important;
+}

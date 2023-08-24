@@ -1,0 +1,88 @@
+.btnAgregar{
+    cursor: pointer !important;
+    color: white !important;
+    background-color: black !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2) !important;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s !important;
+}
+
+.btnAgregar:hover{
+    background-color: #F2CB05 !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3) !important;
+    color: black !important;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 36px;
+    margin: 30px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+
+}
+
+.btn-custom {
+    margin-left: 600px;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    height: 40px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    
+  }
+  
+  .btn-custom:hover {
+    background-color: #F2CB05;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    color: black;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Espacio superior */
+  }
+  
+  .data-table {
+    width: 25%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Colapso de bordes de celdas */
+  }
+  
+  .data-table td {
+    padding: 10px; /* Espaciado interno de celdas */
+    text-align: center; /* Alineación de texto en celdas */
+    border: 1px solid #ccc; /* Borde de celdas */
+  }
+  
+  .data-table td:first-child {
+    background-color: #f2f2f2; /* Color de fondo para la primera celda (encabezado) */
+    font-weight: bold; /* Texto en negrita para la primera celda */
+  }
+  
+  
+  .btnEliminar{
+    cursor: pointer !important;
+    color: black !important;
+    background-color: #F2CB05 !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2) !important;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s !important;
+}
+
+.btnEliminar:hover{
+    background-color: black !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3) !important;
+    color: white !important;
+}

@@ -1,0 +1,61 @@
+<p class="titulo">Conductor</p>
+<div>
+<form class="vertical-form" [formGroup]="choferForm.baseForm">
+    <mat-form-field>
+      <mat-label>Cédula</mat-label>
+      <input matInput formControlName="cedula" />
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Nombre</mat-label>
+      <input matInput formControlName="nombre" />
+    </mat-form-field>
+  
+    <mat-form-field>
+        <mat-label>Primer Apellido</mat-label>
+        <input matInput formControlName="apellido1" />
+      </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Segundo Apellido</mat-label>
+      <input matInput formControlName="apellido2" />
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Fecha de Nacimiento</mat-label>
+      <input type="date" matInput formControlName="fechaNac" />
+    </mat-form-field>
+  </form>
+</div>
+
+  <div class="d-flex justify-content-center">
+    <div class="ml-3"> <!-- Agrega un margen a la izquierda para moverlo a la derecha -->
+      <button class="btn btn-custom btn-lg" (click)="abrirDialog()" >
+        <i class="fas fa-search"></i> Buscar Licencias
+        
+      </button>
+    </div>
+  </div>
+ 
+  
+  
+  <div class="container">
+    <p class="titulo">Licencias</p>
+    <table class="data-table">
+      <tr *ngFor="let licencia of Licencias">
+        <td>{{ licencia.licencia.nombre }}</td>
+        <td>
+          <button type="button" mat-raised-button class="btnEliminar" (click)="eliminar(licencia)">Eliminar</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+
+
+<div class="d-flex justify-content-center">
+  <button mat-raised-button  class="btnAgregar mb-4 mt-4 " (click)="guardarChofer()">Agregar</button>
+</div>
+
+
+
